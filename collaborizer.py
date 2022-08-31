@@ -181,7 +181,7 @@ def valsPosNeg(vec):
 
 def calculaTodasPorcent():
   vetorTot=[]
-  for i in range(2,32):
+  for i in range(2,33):
     vec=df.iloc[:,i]
     vetor=valsPosNeg(vec)
     vetor[0]=criterios[i-2]
@@ -237,16 +237,16 @@ def textosCoopNeg():
   return formaTextoAvaliacaoNeg(calculaTodasPosNegText(),0,10)
 
 def textosCoordPos():
-  return formaTextoAvaliacaoPos(calculaTodasPosNegText(),11,22)
+  return formaTextoAvaliacaoPos(calculaTodasPosNegText(),10,22)
 
 def textosCoordNeg():
-  return formaTextoAvaliacaoNeg(calculaTodasPosNegText(),11,22)
+  return formaTextoAvaliacaoNeg(calculaTodasPosNegText(),10,22)
 
 def textosComunicPos():
-  return formaTextoAvaliacaoPos(calculaTodasPosNegText(),23,31)
+  return formaTextoAvaliacaoPos(calculaTodasPosNegText(),22,31)
 
 def textosComunicNeg():
-  return formaTextoAvaliacaoNeg(calculaTodasPosNegText(),23,31)
+  return formaTextoAvaliacaoNeg(calculaTodasPosNegText(),22,31)
 
 vec=df.iloc[:,2]
 vetor=mediasQuest(vec)
